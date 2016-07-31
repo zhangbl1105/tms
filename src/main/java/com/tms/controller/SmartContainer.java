@@ -1,5 +1,7 @@
 package com.tms.controller;
 
+import java.util.Date;
+
 public class SmartContainer {
 
 	/**
@@ -17,6 +19,31 @@ public class SmartContainer {
 	 */
 	private String vendor;
 	
+	/**
+	 * The date of manufacture
+	 */
+	private Date productDate; 
+	
+	/**
+	 * The owner of this smart container
+	 */
+	private String owner;
+
+	public Date getProductDate() {
+		return productDate;
+	}
+
+	public void setProductDate(Date productDate) {
+		this.productDate = productDate;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
 
 	public String getId() {
 		return id;

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.DispatcherServlet;
 
 /**
  * The definition of SmartContainer REST API
@@ -27,14 +26,14 @@ import org.springframework.web.servlet.DispatcherServlet;
  */
 @RestController
 @RequestMapping("/container")
-public class ContainerController {
+public class SmartContainerController {
 
 	private static final String template = "Bind %s to %s";
     private final AtomicLong counter = new AtomicLong();
 	/**
 	 * Constructor 
 	 */
-	public ContainerController() {
+	public SmartContainerController() {
 		// TODO Auto-generated constructor stub
 	}
 	
